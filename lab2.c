@@ -16,7 +16,7 @@ int main(){
                 printf("Equilateral triangle\n");
                 printf("Testoutcome : - Pass\n");
             }
-            else if(a==b ^ a==c ^ b==c){
+            else if(a==b^a==c^b==c){
                 printf("Isosceles traingle\n");
                 printf("Testoutcome : - Pass\n");
 
