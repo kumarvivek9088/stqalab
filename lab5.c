@@ -8,7 +8,12 @@ int check(char st[]){
             countchr=countchr+1;
         }
         else{
-            countno=countno+1;
+            if (countchr==5){
+                countno=countno+1;
+            }
+            else{
+                return 0;
+            }
         }
     }
     if (countno==4 && countchr==6){
