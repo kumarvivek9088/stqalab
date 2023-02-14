@@ -4,11 +4,11 @@ int check(char st[]){
     int countchr=0;
     int countno=0;
     for(int i=0;i<strlen(st);i++){
-        if (st[i]>="A" & st[i]<="Z"){
-            countchr++;
+        if (st[i]>=65 && st[i]<=90){
+            countchr=countchr+1;
         }
         else{
-            countno++;
+            countno=countno+1;
         }
     }
     if (countno==4 && countchr==6){
@@ -24,7 +24,8 @@ int main(){
     scanf("%s",inp);
     int length = strlen(inp);
     if (length==10){
-        if (check(inp)){
+        int t = check(inp);
+        if (t==1){
             printf("Valid PAN Card Number\n");
         }
         else{
